@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2023.2.1 (64-bit)
+# SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
+# IP Build 4080415 on Thu Dec 14 21:01:57 MST 2023
+# SharedData Build 4077621 on Mon Dec 11 00:23:44 MST 2023
+# Start of session at: Fri Apr 19 11:03:55 2024
+# Process ID: 13716
+# Current directory: F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/main_func/xsim_script.tcl}
+# Log file: F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/xsim.log
+# Journal file: F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog\xsim.jou
+# Running On: Lihanni, OS: Windows, CPU Frequency: 3187 MHz, CPU Physical cores: 12, Host memory: 34070 MB
+#-----------------------------------------------------------
+source xsim.dir/main_func/xsim_script.tcl
+# xsim {main_func} -autoloadwcfg -tclbatch {main_func.tcl}
+Time resolution is 1 ps
+source main_func.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "1325000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1385 ns : File "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func.autotb.v" Line 488
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Apr 19 11:03:57 2024...

@@ -1,0 +1,631 @@
+
+
+================================================================
+== Vitis HLS Report for 'main_func'
+================================================================
+* Date:           Fri Apr 19 10:54:43 2024
+
+* Version:        2023.2.1 (Build 4070103 on Dec 13 2023)
+* Project:        ultra96ms2_418
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  Latency (cycles) |   Latency (absolute)  |      Interval     | Pipeline|
+    |   min   |   max   |    min    |    max    |   min   |   max   |   Type  |
+    +---------+---------+-----------+-----------+---------+---------+---------+
+    |  5235393|  5235393|  52.354 ms|  52.354 ms|  5235394|  5235394|       no|
+    +---------+---------+-----------+-----------+---------+---------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |             Loop Name             |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_56_1_VITIS_LOOP_57_2  |  5235120|  5235120|    327195|          -|          -|    16|        no|
+        +-----------------------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 49
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 42 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 50 [1/1] (0.00ns)   --->   "%tj = alloca i32 1" [ultra96ms2_418/utils.cpp:39->ultra96ms2_418/main_func.cpp:58]   --->   Operation 50 'alloca' 'tj' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%ti = alloca i32 1" [ultra96ms2_418/main_func.cpp:56]   --->   Operation 51 'alloca' 'ti' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%indvar_flatten106 = alloca i32 1"   --->   Operation 52 'alloca' 'indvar_flatten106' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (1.00ns)   --->   "%output_feature_map_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %output_feature_map" [ultra96ms2_418/main_func.cpp:22]   --->   Operation 53 'read' 'output_feature_map_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 54 [1/1] (1.00ns)   --->   "%bias_1x1_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %bias_1x1" [ultra96ms2_418/main_func.cpp:22]   --->   Operation 54 'read' 'bias_1x1_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 55 [1/1] (1.00ns)   --->   "%weights_1x1_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %weights_1x1" [ultra96ms2_418/main_func.cpp:22]   --->   Operation 55 'read' 'weights_1x1_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 56 [1/1] (1.00ns)   --->   "%bias_3x3_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %bias_3x3" [ultra96ms2_418/main_func.cpp:22]   --->   Operation 56 'read' 'bias_3x3_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 57 [1/1] (1.00ns)   --->   "%weights_3x3_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %weights_3x3" [ultra96ms2_418/main_func.cpp:22]   --->   Operation 57 'read' 'weights_3x3_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 58 [1/1] (1.00ns)   --->   "%input_feature_map_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %input_feature_map" [ultra96ms2_418/main_func.cpp:22]   --->   Operation 58 'read' 'input_feature_map_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %weights_3x3_read, i32 1, i32 63" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 59 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%trunc_ln1 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %bias_3x3_read, i32 1, i32 63" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 60 'partselect' 'trunc_ln1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%trunc_ln2 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %weights_1x1_read, i32 1, i32 63" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 61 'partselect' 'trunc_ln2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %bias_1x1_read, i32 1, i32 63" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 62 'partselect' 'trunc_ln3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 63 [1/1] (0.48ns)   --->   "%store_ln0 = store i5 0, i5 %indvar_flatten106"   --->   Operation 63 'store' 'store_ln0' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 64 [1/1] (0.48ns)   --->   "%store_ln56 = store i3 0, i3 %ti" [ultra96ms2_418/main_func.cpp:56]   --->   Operation 64 'store' 'store_ln56' <Predicate = true> <Delay = 0.48>
+ST_1 : Operation 65 [1/1] (0.48ns)   --->   "%store_ln39 = store i3 0, i3 %tj" [ultra96ms2_418/utils.cpp:39->ultra96ms2_418/main_func.cpp:58]   --->   Operation 65 'store' 'store_ln39' <Predicate = true> <Delay = 0.48>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%sext_ln17_5 = sext i63 %trunc_ln" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 66 'sext' 'sext_ln17_5' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%wt_addr = getelementptr i16 %wt, i64 %sext_ln17_5" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 67 'getelementptr' 'wt_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 68 [8/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr, i32 27" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 68 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 69 [7/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr, i32 27" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 69 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 70 [6/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr, i32 27" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 70 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 71 [5/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr, i32 27" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 71 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 72 [4/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr, i32 27" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 72 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 73 [3/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr, i32 27" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 73 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 74 [2/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr, i32 27" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 74 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 75 [1/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr, i32 27" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 75 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 76 [2/2] (0.00ns)   --->   "%call_ln17 = call void @main_func_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_VITIS_LOOP_19_3, i16 %wt, i63 %trunc_ln, i16 %weight_buf3x3_0_0_0, i16 %weight_buf3x3_0_0_1, i16 %weight_buf3x3_0_0_2, i16 %weight_buf3x3_0_1_0, i16 %weight_buf3x3_0_1_1, i16 %weight_buf3x3_0_1_2, i16 %weight_buf3x3_0_2_0, i16 %weight_buf3x3_0_2_1, i16 %weight_buf3x3_0_2_2, i16 %weight_buf3x3_1_0_0, i16 %weight_buf3x3_1_0_1, i16 %weight_buf3x3_1_0_2, i16 %weight_buf3x3_1_1_0, i16 %weight_buf3x3_1_1_1, i16 %weight_buf3x3_1_1_2, i16 %weight_buf3x3_1_2_0, i16 %weight_buf3x3_1_2_1, i16 %weight_buf3x3_1_2_2, i16 %weight_buf3x3_2_0_0, i16 %weight_buf3x3_2_0_1, i16 %weight_buf3x3_2_0_2, i16 %weight_buf3x3_2_1_0, i16 %weight_buf3x3_2_1_1, i16 %weight_buf3x3_2_1_2, i16 %weight_buf3x3_2_2_0, i16 %weight_buf3x3_2_2_1, i16 %weight_buf3x3_2_2_2" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 76 'call' 'call_ln17' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 77 [1/2] (0.00ns)   --->   "%call_ln17 = call void @main_func_Pipeline_VITIS_LOOP_17_1_VITIS_LOOP_18_2_VITIS_LOOP_19_3, i16 %wt, i63 %trunc_ln, i16 %weight_buf3x3_0_0_0, i16 %weight_buf3x3_0_0_1, i16 %weight_buf3x3_0_0_2, i16 %weight_buf3x3_0_1_0, i16 %weight_buf3x3_0_1_1, i16 %weight_buf3x3_0_1_2, i16 %weight_buf3x3_0_2_0, i16 %weight_buf3x3_0_2_1, i16 %weight_buf3x3_0_2_2, i16 %weight_buf3x3_1_0_0, i16 %weight_buf3x3_1_0_1, i16 %weight_buf3x3_1_0_2, i16 %weight_buf3x3_1_1_0, i16 %weight_buf3x3_1_1_1, i16 %weight_buf3x3_1_1_2, i16 %weight_buf3x3_1_2_0, i16 %weight_buf3x3_1_2_1, i16 %weight_buf3x3_1_2_2, i16 %weight_buf3x3_2_0_0, i16 %weight_buf3x3_2_0_1, i16 %weight_buf3x3_2_0_2, i16 %weight_buf3x3_2_1_0, i16 %weight_buf3x3_2_1_1, i16 %weight_buf3x3_2_1_2, i16 %weight_buf3x3_2_2_0, i16 %weight_buf3x3_2_2_1, i16 %weight_buf3x3_2_2_2" [ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40]   --->   Operation 77 'call' 'call_ln17' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 7.30>
+ST_12 : Operation 78 [1/1] (0.00ns)   --->   "%sext_ln22 = sext i63 %trunc_ln1" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 78 'sext' 'sext_ln22' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 79 [1/1] (0.00ns)   --->   "%wt_addr_1 = getelementptr i16 %wt, i64 %sext_ln22" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 79 'getelementptr' 'wt_addr_1' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 80 [8/8] (7.30ns)   --->   "%empty_38 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_1, i32 3" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 80 'readreq' 'empty_38' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 13 <SV = 12> <Delay = 7.30>
+ST_13 : Operation 81 [7/8] (7.30ns)   --->   "%empty_38 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_1, i32 3" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 81 'readreq' 'empty_38' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 14 <SV = 13> <Delay = 7.30>
+ST_14 : Operation 82 [6/8] (7.30ns)   --->   "%empty_38 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_1, i32 3" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 82 'readreq' 'empty_38' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 15 <SV = 14> <Delay = 7.30>
+ST_15 : Operation 83 [5/8] (7.30ns)   --->   "%empty_38 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_1, i32 3" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 83 'readreq' 'empty_38' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 16 <SV = 15> <Delay = 7.30>
+ST_16 : Operation 84 [4/8] (7.30ns)   --->   "%empty_38 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_1, i32 3" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 84 'readreq' 'empty_38' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 16> <Delay = 7.30>
+ST_17 : Operation 85 [3/8] (7.30ns)   --->   "%empty_38 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_1, i32 3" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 85 'readreq' 'empty_38' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 18 <SV = 17> <Delay = 7.30>
+ST_18 : Operation 86 [2/8] (7.30ns)   --->   "%empty_38 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_1, i32 3" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 86 'readreq' 'empty_38' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 19 <SV = 18> <Delay = 7.30>
+ST_19 : Operation 87 [1/8] (7.30ns)   --->   "%empty_38 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_1, i32 3" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 87 'readreq' 'empty_38' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 20 <SV = 19> <Delay = 0.00>
+ST_20 : Operation 88 [2/2] (0.00ns)   --->   "%call_ln22 = call void @main_func_Pipeline_VITIS_LOOP_22_4, i16 %wt, i63 %trunc_ln1, i16 %bias_buf3x3_0, i16 %bias_buf3x3_1, i16 %bias_buf3x3_2" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 88 'call' 'call_ln22' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 21 <SV = 20> <Delay = 0.00>
+ST_21 : Operation 89 [1/2] (0.00ns)   --->   "%call_ln22 = call void @main_func_Pipeline_VITIS_LOOP_22_4, i16 %wt, i63 %trunc_ln1, i16 %bias_buf3x3_0, i16 %bias_buf3x3_1, i16 %bias_buf3x3_2" [ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40]   --->   Operation 89 'call' 'call_ln22' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 22 <SV = 21> <Delay = 7.30>
+ST_22 : Operation 90 [1/1] (0.00ns)   --->   "%sext_ln25 = sext i63 %trunc_ln2" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 90 'sext' 'sext_ln25' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 91 [1/1] (0.00ns)   --->   "%wt_addr_2 = getelementptr i16 %wt, i64 %sext_ln25" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 91 'getelementptr' 'wt_addr_2' <Predicate = true> <Delay = 0.00>
+ST_22 : Operation 92 [8/8] (7.30ns)   --->   "%empty_39 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_2, i32 144" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 92 'readreq' 'empty_39' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 23 <SV = 22> <Delay = 7.30>
+ST_23 : Operation 93 [7/8] (7.30ns)   --->   "%empty_39 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_2, i32 144" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 93 'readreq' 'empty_39' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 24 <SV = 23> <Delay = 7.30>
+ST_24 : Operation 94 [6/8] (7.30ns)   --->   "%empty_39 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_2, i32 144" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 94 'readreq' 'empty_39' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 25 <SV = 24> <Delay = 7.30>
+ST_25 : Operation 95 [5/8] (7.30ns)   --->   "%empty_39 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_2, i32 144" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 95 'readreq' 'empty_39' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 26 <SV = 25> <Delay = 7.30>
+ST_26 : Operation 96 [4/8] (7.30ns)   --->   "%empty_39 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_2, i32 144" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 96 'readreq' 'empty_39' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 27 <SV = 26> <Delay = 7.30>
+ST_27 : Operation 97 [3/8] (7.30ns)   --->   "%empty_39 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_2, i32 144" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 97 'readreq' 'empty_39' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 28 <SV = 27> <Delay = 7.30>
+ST_28 : Operation 98 [2/8] (7.30ns)   --->   "%empty_39 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_2, i32 144" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 98 'readreq' 'empty_39' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 29 <SV = 28> <Delay = 7.30>
+ST_29 : Operation 99 [1/8] (7.30ns)   --->   "%empty_39 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_2, i32 144" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 99 'readreq' 'empty_39' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 30 <SV = 29> <Delay = 0.00>
+ST_30 : Operation 100 [2/2] (0.00ns)   --->   "%call_ln25 = call void @main_func_Pipeline_VITIS_LOOP_25_5_VITIS_LOOP_26_6, i16 %wt, i63 %trunc_ln2, i16 %weight_buf1x1_0, i16 %weight_buf1x1_1, i16 %weight_buf1x1_2" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 100 'call' 'call_ln25' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 31 <SV = 30> <Delay = 0.00>
+ST_31 : Operation 101 [1/2] (0.00ns)   --->   "%call_ln25 = call void @main_func_Pipeline_VITIS_LOOP_25_5_VITIS_LOOP_26_6, i16 %wt, i63 %trunc_ln2, i16 %weight_buf1x1_0, i16 %weight_buf1x1_1, i16 %weight_buf1x1_2" [ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40]   --->   Operation 101 'call' 'call_ln25' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 32 <SV = 31> <Delay = 7.30>
+ST_32 : Operation 102 [1/1] (0.00ns)   --->   "%sext_ln29 = sext i63 %trunc_ln3" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 102 'sext' 'sext_ln29' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 103 [1/1] (0.00ns)   --->   "%wt_addr_3 = getelementptr i16 %wt, i64 %sext_ln29" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 103 'getelementptr' 'wt_addr_3' <Predicate = true> <Delay = 0.00>
+ST_32 : Operation 104 [8/8] (7.30ns)   --->   "%empty_40 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_3, i32 48" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 104 'readreq' 'empty_40' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 33 <SV = 32> <Delay = 7.30>
+ST_33 : Operation 105 [7/8] (7.30ns)   --->   "%empty_40 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_3, i32 48" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 105 'readreq' 'empty_40' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 34 <SV = 33> <Delay = 7.30>
+ST_34 : Operation 106 [6/8] (7.30ns)   --->   "%empty_40 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_3, i32 48" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 106 'readreq' 'empty_40' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 35 <SV = 34> <Delay = 7.30>
+ST_35 : Operation 107 [5/8] (7.30ns)   --->   "%empty_40 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_3, i32 48" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 107 'readreq' 'empty_40' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 36 <SV = 35> <Delay = 7.30>
+ST_36 : Operation 108 [4/8] (7.30ns)   --->   "%empty_40 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_3, i32 48" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 108 'readreq' 'empty_40' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 37 <SV = 36> <Delay = 7.30>
+ST_37 : Operation 109 [3/8] (7.30ns)   --->   "%empty_40 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_3, i32 48" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 109 'readreq' 'empty_40' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 38 <SV = 37> <Delay = 7.30>
+ST_38 : Operation 110 [2/8] (7.30ns)   --->   "%empty_40 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_3, i32 48" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 110 'readreq' 'empty_40' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 39 <SV = 38> <Delay = 7.30>
+ST_39 : Operation 111 [1/8] (7.30ns)   --->   "%empty_40 = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i16, i16 %wt_addr_3, i32 48" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 111 'readreq' 'empty_40' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 40 <SV = 39> <Delay = 0.00>
+ST_40 : Operation 112 [2/2] (0.00ns)   --->   "%call_ln29 = call void @main_func_Pipeline_VITIS_LOOP_29_7, i16 %wt, i63 %trunc_ln3, i16 %bias_buf1x1" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 112 'call' 'call_ln29' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 41 <SV = 40> <Delay = 0.00>
+ST_41 : Operation 113 [1/1] (0.00ns)   --->   "%spectopmodule_ln21 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_12" [ultra96ms2_418/main_func.cpp:21]   --->   Operation 113 'spectopmodule' 'spectopmodule_ln21' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 114 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %fm, void @empty_13, i32 0, i32 0, void @empty_10, i32 0, i32 1, void @empty_8, void @empty_9, void @empty_10, i32 16, i32 16, i32 16, i32 16, void @empty_10, void @empty_10, i32 4294967295, i32 0"   --->   Operation 114 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 115 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %fm"   --->   Operation 115 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 116 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %wt, void @empty_13, i32 0, i32 0, void @empty_10, i32 0, i32 1, void @empty_3, void @empty_9, void @empty_10, i32 16, i32 16, i32 16, i32 16, void @empty_10, void @empty_10, i32 4294967295, i32 0"   --->   Operation 116 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 117 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %wt"   --->   Operation 117 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 118 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_feature_map, void @empty_11, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_4, void @empty_1, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 118 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 119 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %input_feature_map, void @empty_16, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_10, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 119 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 120 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %weights_3x3, void @empty_11, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_4, void @empty_7, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 120 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 121 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %weights_3x3, void @empty_16, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_10, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 121 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 122 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %bias_3x3, void @empty_11, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_4, void @empty, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 122 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 123 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %bias_3x3, void @empty_16, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_10, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 123 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 124 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %weights_1x1, void @empty_11, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_4, void @empty_14, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 124 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 125 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %weights_1x1, void @empty_16, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_10, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 125 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 126 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %bias_1x1, void @empty_11, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_4, void @empty_2, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 126 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 127 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %bias_1x1, void @empty_16, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_10, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 127 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 128 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %output_feature_map, void @empty_11, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_4, void @empty_15, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 128 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 129 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %output_feature_map, void @empty_16, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_10, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_0, i32 4294967295, i32 0"   --->   Operation 129 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 130 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_11, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_4, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_10, i32 4294967295, i32 0"   --->   Operation 130 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_41 : Operation 131 [1/2] (0.00ns)   --->   "%call_ln29 = call void @main_func_Pipeline_VITIS_LOOP_29_7, i16 %wt, i63 %trunc_ln3, i16 %bias_buf1x1" [ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40]   --->   Operation 131 'call' 'call_ln29' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_41 : Operation 132 [1/1] (0.00ns)   --->   "%br_ln62 = br void %for.inc" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 132 'br' 'br_ln62' <Predicate = true> <Delay = 0.00>
+
+State 42 <SV = 41> <Delay = 2.25>
+ST_42 : Operation 133 [1/1] (0.00ns)   --->   "%indvar_flatten106_load = load i5 %indvar_flatten106" [ultra96ms2_418/main_func.cpp:56]   --->   Operation 133 'load' 'indvar_flatten106_load' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 134 [1/1] (0.87ns)   --->   "%icmp_ln56 = icmp_eq  i5 %indvar_flatten106_load, i5 16" [ultra96ms2_418/main_func.cpp:56]   --->   Operation 134 'icmp' 'icmp_ln56' <Predicate = true> <Delay = 0.87> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 135 [1/1] (0.87ns)   --->   "%add_ln56_1 = add i5 %indvar_flatten106_load, i5 1" [ultra96ms2_418/main_func.cpp:56]   --->   Operation 135 'add' 'add_ln56_1' <Predicate = true> <Delay = 0.87> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.87> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 136 [1/1] (0.00ns)   --->   "%br_ln56 = br i1 %icmp_ln56, void %for.inc5, void %for.end7" [ultra96ms2_418/main_func.cpp:56]   --->   Operation 136 'br' 'br_ln56' <Predicate = true> <Delay = 0.00>
+ST_42 : Operation 137 [1/1] (0.00ns)   --->   "%tj_load = load i3 %tj" [ultra96ms2_418/main_func.cpp:57]   --->   Operation 137 'load' 'tj_load' <Predicate = (!icmp_ln56)> <Delay = 0.00>
+ST_42 : Operation 138 [1/1] (0.00ns)   --->   "%ti_load = load i3 %ti" [ultra96ms2_418/main_func.cpp:56]   --->   Operation 138 'load' 'ti_load' <Predicate = (!icmp_ln56)> <Delay = 0.00>
+ST_42 : Operation 139 [1/1] (0.74ns)   --->   "%add_ln56 = add i3 %ti_load, i3 1" [ultra96ms2_418/main_func.cpp:56]   --->   Operation 139 'add' 'add_ln56' <Predicate = (!icmp_ln56)> <Delay = 0.74> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.74> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 140 [1/1] (0.74ns)   --->   "%icmp_ln57 = icmp_eq  i3 %tj_load, i3 4" [ultra96ms2_418/main_func.cpp:57]   --->   Operation 140 'icmp' 'icmp_ln57' <Predicate = (!icmp_ln56)> <Delay = 0.74> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.74> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 141 [1/1] (0.27ns)   --->   "%select_ln62 = select i1 %icmp_ln57, i3 0, i3 %tj_load" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 141 'select' 'select_ln62' <Predicate = (!icmp_ln56)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_42 : Operation 142 [1/1] (0.27ns)   --->   "%select_ln62_1 = select i1 %icmp_ln57, i3 %add_ln56, i3 %ti_load" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 142 'select' 'select_ln62_1' <Predicate = (!icmp_ln56)> <Delay = 0.27> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.27> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_42 : Operation 143 [1/1] (0.00ns)   --->   "%trunc_ln62 = trunc i3 %select_ln62_1" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 143 'trunc' 'trunc_ln62' <Predicate = (!icmp_ln56)> <Delay = 0.00>
+ST_42 : Operation 144 [1/1] (0.00ns)   --->   "%empty_41 = trunc i3 %select_ln62" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 144 'trunc' 'empty_41' <Predicate = (!icmp_ln56)> <Delay = 0.00>
+ST_42 : Operation 145 [1/1] (0.00ns)   --->   "%tmp_36 = bitconcatenate i8 @_ssdm_op_BitConcatenate.i8.i2.i2.i4, i2 %empty_41, i2 %empty_41, i4 0" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 145 'bitconcatenate' 'tmp_36' <Predicate = (!icmp_ln56)> <Delay = 0.00>
+ST_42 : Operation 146 [2/2] (0.00ns)   --->   "%call_ln62 = call void @main_func_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2_VITIS_LOOP_45_3, i16 %fm, i2 %trunc_ln62, i8 %tmp_36, i64 %input_feature_map_read, i16 %inBuffer3x3_0_0, i16 %inBuffer3x3_0_1, i16 %inBuffer3x3_0_2, i16 %inBuffer3x3_1_0, i16 %inBuffer3x3_1_1, i16 %inBuffer3x3_1_2, i16 %inBuffer3x3_2_0, i16 %inBuffer3x3_2_1, i16 %inBuffer3x3_2_2" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 146 'call' 'call_ln62' <Predicate = (!icmp_ln56)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_42 : Operation 147 [1/1] (0.74ns)   --->   "%add_ln57 = add i3 %select_ln62, i3 1" [ultra96ms2_418/main_func.cpp:57]   --->   Operation 147 'add' 'add_ln57' <Predicate = (!icmp_ln56)> <Delay = 0.74> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.74> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 148 [1/1] (0.48ns)   --->   "%store_ln56 = store i5 %add_ln56_1, i5 %indvar_flatten106" [ultra96ms2_418/main_func.cpp:56]   --->   Operation 148 'store' 'store_ln56' <Predicate = (!icmp_ln56)> <Delay = 0.48>
+ST_42 : Operation 149 [1/1] (0.48ns)   --->   "%store_ln56 = store i3 %select_ln62_1, i3 %ti" [ultra96ms2_418/main_func.cpp:56]   --->   Operation 149 'store' 'store_ln56' <Predicate = (!icmp_ln56)> <Delay = 0.48>
+ST_42 : Operation 150 [1/1] (0.48ns)   --->   "%store_ln39 = store i3 %add_ln57, i3 %tj" [ultra96ms2_418/utils.cpp:39->ultra96ms2_418/main_func.cpp:58]   --->   Operation 150 'store' 'store_ln39' <Predicate = (!icmp_ln56)> <Delay = 0.48>
+ST_42 : Operation 151 [1/1] (0.00ns)   --->   "%ret_ln89 = ret" [ultra96ms2_418/main_func.cpp:89]   --->   Operation 151 'ret' 'ret_ln89' <Predicate = (icmp_ln56)> <Delay = 0.00>
+
+State 43 <SV = 42> <Delay = 0.00>
+ST_43 : Operation 152 [1/2] (0.00ns)   --->   "%call_ln62 = call void @main_func_Pipeline_VITIS_LOOP_43_1_VITIS_LOOP_44_2_VITIS_LOOP_45_3, i16 %fm, i2 %trunc_ln62, i8 %tmp_36, i64 %input_feature_map_read, i16 %inBuffer3x3_0_0, i16 %inBuffer3x3_0_1, i16 %inBuffer3x3_0_2, i16 %inBuffer3x3_1_0, i16 %inBuffer3x3_1_1, i16 %inBuffer3x3_1_2, i16 %inBuffer3x3_2_0, i16 %inBuffer3x3_2_1, i16 %inBuffer3x3_2_2" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 152 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 44 <SV = 43> <Delay = 0.00>
+ST_44 : Operation 153 [1/1] (0.00ns)   --->   "%bias_buf3x3_0_load = load i16 %bias_buf3x3_0"   --->   Operation 153 'load' 'bias_buf3x3_0_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 154 [1/1] (0.00ns)   --->   "%bias_buf3x3_1_load = load i16 %bias_buf3x3_1"   --->   Operation 154 'load' 'bias_buf3x3_1_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 155 [1/1] (0.00ns)   --->   "%bias_buf3x3_2_load = load i16 %bias_buf3x3_2"   --->   Operation 155 'load' 'bias_buf3x3_2_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 156 [1/1] (0.00ns)   --->   "%weight_buf3x3_0_0_0_load = load i16 %weight_buf3x3_0_0_0" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 156 'load' 'weight_buf3x3_0_0_0_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 157 [1/1] (0.00ns)   --->   "%weight_buf3x3_0_0_1_load = load i16 %weight_buf3x3_0_0_1" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 157 'load' 'weight_buf3x3_0_0_1_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 158 [1/1] (0.00ns)   --->   "%weight_buf3x3_0_0_2_load = load i16 %weight_buf3x3_0_0_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 158 'load' 'weight_buf3x3_0_0_2_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 159 [1/1] (0.00ns)   --->   "%weight_buf3x3_0_1_0_load = load i16 %weight_buf3x3_0_1_0" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 159 'load' 'weight_buf3x3_0_1_0_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 160 [1/1] (0.00ns)   --->   "%weight_buf3x3_0_1_1_load = load i16 %weight_buf3x3_0_1_1" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 160 'load' 'weight_buf3x3_0_1_1_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 161 [1/1] (0.00ns)   --->   "%weight_buf3x3_0_1_2_load = load i16 %weight_buf3x3_0_1_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 161 'load' 'weight_buf3x3_0_1_2_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 162 [1/1] (0.00ns)   --->   "%weight_buf3x3_0_2_0_load = load i16 %weight_buf3x3_0_2_0" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 162 'load' 'weight_buf3x3_0_2_0_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 163 [1/1] (0.00ns)   --->   "%weight_buf3x3_0_2_1_load = load i16 %weight_buf3x3_0_2_1" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 163 'load' 'weight_buf3x3_0_2_1_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 164 [1/1] (0.00ns)   --->   "%weight_buf3x3_0_2_2_load = load i16 %weight_buf3x3_0_2_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 164 'load' 'weight_buf3x3_0_2_2_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 165 [1/1] (0.00ns)   --->   "%weight_buf3x3_1_0_0_load = load i16 %weight_buf3x3_1_0_0" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 165 'load' 'weight_buf3x3_1_0_0_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 166 [1/1] (0.00ns)   --->   "%weight_buf3x3_1_0_1_load = load i16 %weight_buf3x3_1_0_1" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 166 'load' 'weight_buf3x3_1_0_1_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 167 [1/1] (0.00ns)   --->   "%weight_buf3x3_1_0_2_load = load i16 %weight_buf3x3_1_0_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 167 'load' 'weight_buf3x3_1_0_2_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 168 [1/1] (0.00ns)   --->   "%weight_buf3x3_1_1_0_load = load i16 %weight_buf3x3_1_1_0" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 168 'load' 'weight_buf3x3_1_1_0_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 169 [1/1] (0.00ns)   --->   "%weight_buf3x3_1_1_1_load = load i16 %weight_buf3x3_1_1_1" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 169 'load' 'weight_buf3x3_1_1_1_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 170 [1/1] (0.00ns)   --->   "%weight_buf3x3_1_1_2_load = load i16 %weight_buf3x3_1_1_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 170 'load' 'weight_buf3x3_1_1_2_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 171 [1/1] (0.00ns)   --->   "%weight_buf3x3_1_2_0_load = load i16 %weight_buf3x3_1_2_0" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 171 'load' 'weight_buf3x3_1_2_0_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 172 [1/1] (0.00ns)   --->   "%weight_buf3x3_1_2_1_load = load i16 %weight_buf3x3_1_2_1" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 172 'load' 'weight_buf3x3_1_2_1_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 173 [1/1] (0.00ns)   --->   "%weight_buf3x3_1_2_2_load = load i16 %weight_buf3x3_1_2_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 173 'load' 'weight_buf3x3_1_2_2_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 174 [1/1] (0.00ns)   --->   "%weight_buf3x3_2_0_0_load = load i16 %weight_buf3x3_2_0_0" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 174 'load' 'weight_buf3x3_2_0_0_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 175 [1/1] (0.00ns)   --->   "%weight_buf3x3_2_0_1_load = load i16 %weight_buf3x3_2_0_1" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 175 'load' 'weight_buf3x3_2_0_1_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 176 [1/1] (0.00ns)   --->   "%weight_buf3x3_2_0_2_load = load i16 %weight_buf3x3_2_0_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 176 'load' 'weight_buf3x3_2_0_2_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 177 [1/1] (0.00ns)   --->   "%weight_buf3x3_2_1_0_load = load i16 %weight_buf3x3_2_1_0" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 177 'load' 'weight_buf3x3_2_1_0_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 178 [1/1] (0.00ns)   --->   "%weight_buf3x3_2_1_1_load = load i16 %weight_buf3x3_2_1_1" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 178 'load' 'weight_buf3x3_2_1_1_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 179 [1/1] (0.00ns)   --->   "%weight_buf3x3_2_1_2_load = load i16 %weight_buf3x3_2_1_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 179 'load' 'weight_buf3x3_2_1_2_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 180 [1/1] (0.00ns)   --->   "%weight_buf3x3_2_2_0_load = load i16 %weight_buf3x3_2_2_0" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 180 'load' 'weight_buf3x3_2_2_0_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 181 [1/1] (0.00ns)   --->   "%weight_buf3x3_2_2_1_load = load i16 %weight_buf3x3_2_2_1" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 181 'load' 'weight_buf3x3_2_2_1_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 182 [1/1] (0.00ns)   --->   "%weight_buf3x3_2_2_2_load = load i16 %weight_buf3x3_2_2_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 182 'load' 'weight_buf3x3_2_2_2_load' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 183 [2/2] (0.00ns)   --->   "%call_ln36 = call void @main_func_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2_VITIS_LOOP_32_3, i16 %bias_buf3x3_0_load, i16 %bias_buf3x3_1_load, i16 %bias_buf3x3_2_load, i16 %weight_buf3x3_0_0_0_load, i16 %weight_buf3x3_0_0_1_load, i16 %weight_buf3x3_0_0_2_load, i16 %weight_buf3x3_0_1_0_load, i16 %weight_buf3x3_0_1_1_load, i16 %weight_buf3x3_0_1_2_load, i16 %weight_buf3x3_0_2_0_load, i16 %weight_buf3x3_0_2_1_load, i16 %weight_buf3x3_0_2_2_load, i16 %weight_buf3x3_1_0_0_load, i16 %weight_buf3x3_1_0_1_load, i16 %weight_buf3x3_1_0_2_load, i16 %weight_buf3x3_1_1_0_load, i16 %weight_buf3x3_1_1_1_load, i16 %weight_buf3x3_1_1_2_load, i16 %weight_buf3x3_1_2_0_load, i16 %weight_buf3x3_1_2_1_load, i16 %weight_buf3x3_1_2_2_load, i16 %weight_buf3x3_2_0_0_load, i16 %weight_buf3x3_2_0_1_load, i16 %weight_buf3x3_2_0_2_load, i16 %weight_buf3x3_2_1_0_load, i16 %weight_buf3x3_2_1_1_load, i16 %weight_buf3x3_2_1_2_load, i16 %weight_buf3x3_2_2_0_load, i16 %weight_buf3x3_2_2_1_load, i16 %weight_buf3x3_2_2_2_load, i16 %outBuffer3x3_0, i16 %inBuffer3x3_0_0, i16 %inBuffer3x3_0_1, i16 %inBuffer3x3_0_2, i16 %inBuffer3x3_1_0, i16 %inBuffer3x3_1_1, i16 %inBuffer3x3_1_2, i16 %inBuffer3x3_2_0, i16 %inBuffer3x3_2_1, i16 %inBuffer3x3_2_2, i16 %outBuffer3x3_1, i16 %outBuffer3x3_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 183 'call' 'call_ln36' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 45 <SV = 44> <Delay = 0.00>
+ST_45 : Operation 184 [1/2] (0.00ns)   --->   "%call_ln36 = call void @main_func_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2_VITIS_LOOP_32_3, i16 %bias_buf3x3_0_load, i16 %bias_buf3x3_1_load, i16 %bias_buf3x3_2_load, i16 %weight_buf3x3_0_0_0_load, i16 %weight_buf3x3_0_0_1_load, i16 %weight_buf3x3_0_0_2_load, i16 %weight_buf3x3_0_1_0_load, i16 %weight_buf3x3_0_1_1_load, i16 %weight_buf3x3_0_1_2_load, i16 %weight_buf3x3_0_2_0_load, i16 %weight_buf3x3_0_2_1_load, i16 %weight_buf3x3_0_2_2_load, i16 %weight_buf3x3_1_0_0_load, i16 %weight_buf3x3_1_0_1_load, i16 %weight_buf3x3_1_0_2_load, i16 %weight_buf3x3_1_1_0_load, i16 %weight_buf3x3_1_1_1_load, i16 %weight_buf3x3_1_1_2_load, i16 %weight_buf3x3_1_2_0_load, i16 %weight_buf3x3_1_2_1_load, i16 %weight_buf3x3_1_2_2_load, i16 %weight_buf3x3_2_0_0_load, i16 %weight_buf3x3_2_0_1_load, i16 %weight_buf3x3_2_0_2_load, i16 %weight_buf3x3_2_1_0_load, i16 %weight_buf3x3_2_1_1_load, i16 %weight_buf3x3_2_1_2_load, i16 %weight_buf3x3_2_2_0_load, i16 %weight_buf3x3_2_2_1_load, i16 %weight_buf3x3_2_2_2_load, i16 %outBuffer3x3_0, i16 %inBuffer3x3_0_0, i16 %inBuffer3x3_0_1, i16 %inBuffer3x3_0_2, i16 %inBuffer3x3_1_0, i16 %inBuffer3x3_1_1, i16 %inBuffer3x3_1_2, i16 %inBuffer3x3_2_0, i16 %inBuffer3x3_2_1, i16 %inBuffer3x3_2_2, i16 %outBuffer3x3_1, i16 %outBuffer3x3_2" [ultra96ms2_418/dw_conv3x3.cpp:36->ultra96ms2_418/main_func.cpp:65]   --->   Operation 184 'call' 'call_ln36' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 46 <SV = 45> <Delay = 0.00>
+ST_46 : Operation 185 [2/2] (0.00ns)   --->   "%call_ln0 = call void @main_func_Pipeline_VITIS_LOOP_12_1_VITIS_LOOP_13_2_VITIS_LOOP_14_3, i16 %bias_buf1x1, i16 %weight_buf1x1_0, i16 %weight_buf1x1_1, i16 %weight_buf1x1_2, i16 %outBuffer3x3_0, i16 %outBuffer3x3_1, i16 %outBuffer3x3_2, i16 %outBuffer1x1"   --->   Operation 185 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 47 <SV = 46> <Delay = 2.85>
+ST_47 : Operation 186 [1/1] (0.00ns)   --->   "%zext_ln62 = zext i3 %select_ln62_1" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 186 'zext' 'zext_ln62' <Predicate = true> <Delay = 0.00>
+ST_47 : Operation 187 [1/1] (2.85ns)   --->   "%mul_ln62 = mul i17 %zext_ln62, i17 12800" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 187 'mul' 'mul_ln62' <Predicate = true> <Delay = 2.85> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 0> <II = 1> <Delay = 2.85> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 188 [1/2] (0.00ns)   --->   "%call_ln0 = call void @main_func_Pipeline_VITIS_LOOP_12_1_VITIS_LOOP_13_2_VITIS_LOOP_14_3, i16 %bias_buf1x1, i16 %weight_buf1x1_0, i16 %weight_buf1x1_1, i16 %weight_buf1x1_2, i16 %outBuffer3x3_0, i16 %outBuffer3x3_1, i16 %outBuffer3x3_2, i16 %outBuffer1x1"   --->   Operation 188 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 48 <SV = 47> <Delay = 0.00>
+ST_48 : Operation 189 [2/2] (0.00ns)   --->   "%call_ln62 = call void @main_func_Pipeline_VITIS_LOOP_66_1_VITIS_LOOP_67_2_VITIS_LOOP_68_3, i16 %fm, i17 %mul_ln62, i2 %empty_41, i64 %output_feature_map_read, i16 %outBuffer1x1" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 189 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 49 <SV = 48> <Delay = 0.00>
+ST_49 : Operation 190 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_56_1_VITIS_LOOP_57_2_str"   --->   Operation 190 'specloopname' 'specloopname_ln0' <Predicate = true> <Delay = 0.00>
+ST_49 : Operation 191 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 16, i64 16, i64 16"   --->   Operation 191 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_49 : Operation 192 [1/2] (0.00ns)   --->   "%call_ln62 = call void @main_func_Pipeline_VITIS_LOOP_66_1_VITIS_LOOP_67_2_VITIS_LOOP_68_3, i16 %fm, i17 %mul_ln62, i2 %empty_41, i64 %output_feature_map_read, i16 %outBuffer1x1" [ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80]   --->   Operation 192 'call' 'call_ln62' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_49 : Operation 193 [1/1] (0.00ns)   --->   "%br_ln57 = br void %for.inc" [ultra96ms2_418/main_func.cpp:57]   --->   Operation 193 'br' 'br_ln57' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.000ns
+The critical path consists of the following:
+	s_axi read operation ('output_feature_map_read', ultra96ms2_418/main_func.cpp:22) on port 'output_feature_map' (ultra96ms2_418/main_func.cpp:22) [77]  (1.000 ns)
+
+ <State 2>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 16 bit ('wt_addr', ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) [85]  (0.000 ns)
+	bus request operation ('empty', ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) [86]  (7.300 ns)
+
+ <State 3>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) [86]  (7.300 ns)
+
+ <State 4>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) [86]  (7.300 ns)
+
+ <State 5>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) [86]  (7.300 ns)
+
+ <State 6>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) [86]  (7.300 ns)
+
+ <State 7>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) [86]  (7.300 ns)
+
+ <State 8>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) [86]  (7.300 ns)
+
+ <State 9>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:17->ultra96ms2_418/main_func.cpp:40) [86]  (7.300 ns)
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 16 bit ('wt_addr_1', ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) [90]  (0.000 ns)
+	bus request operation ('empty_38', ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) [91]  (7.300 ns)
+
+ <State 13>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_38', ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) [91]  (7.300 ns)
+
+ <State 14>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_38', ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) [91]  (7.300 ns)
+
+ <State 15>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_38', ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) [91]  (7.300 ns)
+
+ <State 16>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_38', ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) [91]  (7.300 ns)
+
+ <State 17>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_38', ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) [91]  (7.300 ns)
+
+ <State 18>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_38', ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) [91]  (7.300 ns)
+
+ <State 19>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_38', ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:22->ultra96ms2_418/main_func.cpp:40) [91]  (7.300 ns)
+
+ <State 20>: 0.000ns
+The critical path consists of the following:
+
+ <State 21>: 0.000ns
+The critical path consists of the following:
+
+ <State 22>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 16 bit ('wt_addr_2', ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) [95]  (0.000 ns)
+	bus request operation ('empty_39', ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) [96]  (7.300 ns)
+
+ <State 23>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_39', ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) [96]  (7.300 ns)
+
+ <State 24>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_39', ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) [96]  (7.300 ns)
+
+ <State 25>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_39', ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) [96]  (7.300 ns)
+
+ <State 26>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_39', ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) [96]  (7.300 ns)
+
+ <State 27>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_39', ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) [96]  (7.300 ns)
+
+ <State 28>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_39', ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) [96]  (7.300 ns)
+
+ <State 29>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_39', ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:25->ultra96ms2_418/main_func.cpp:40) [96]  (7.300 ns)
+
+ <State 30>: 0.000ns
+The critical path consists of the following:
+
+ <State 31>: 0.000ns
+The critical path consists of the following:
+
+ <State 32>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 16 bit ('wt_addr_3', ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) [100]  (0.000 ns)
+	bus request operation ('empty_40', ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) [101]  (7.300 ns)
+
+ <State 33>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_40', ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) [101]  (7.300 ns)
+
+ <State 34>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_40', ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) [101]  (7.300 ns)
+
+ <State 35>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_40', ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) [101]  (7.300 ns)
+
+ <State 36>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_40', ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) [101]  (7.300 ns)
+
+ <State 37>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_40', ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) [101]  (7.300 ns)
+
+ <State 38>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_40', ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) [101]  (7.300 ns)
+
+ <State 39>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty_40', ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) on port 'wt' (ultra96ms2_418/utils.cpp:29->ultra96ms2_418/main_func.cpp:40) [101]  (7.300 ns)
+
+ <State 40>: 0.000ns
+The critical path consists of the following:
+
+ <State 41>: 0.000ns
+The critical path consists of the following:
+
+ <State 42>: 2.257ns
+The critical path consists of the following:
+	'load' operation 3 bit ('tj_load', ultra96ms2_418/main_func.cpp:57) on local variable 'tj', ultra96ms2_418/utils.cpp:39->ultra96ms2_418/main_func.cpp:58 [113]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln57', ultra96ms2_418/main_func.cpp:57) [118]  (0.746 ns)
+	'select' operation 3 bit ('select_ln62', ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80) [119]  (0.275 ns)
+	'add' operation 3 bit ('add_ln57', ultra96ms2_418/main_func.cpp:57) [160]  (0.746 ns)
+	'store' operation 0 bit ('store_ln39', ultra96ms2_418/utils.cpp:39->ultra96ms2_418/main_func.cpp:58) of variable 'add_ln57', ultra96ms2_418/main_func.cpp:57 on local variable 'tj', ultra96ms2_418/utils.cpp:39->ultra96ms2_418/main_func.cpp:58 [163]  (0.489 ns)
+
+ <State 43>: 0.000ns
+The critical path consists of the following:
+
+ <State 44>: 0.000ns
+The critical path consists of the following:
+
+ <State 45>: 0.000ns
+The critical path consists of the following:
+
+ <State 46>: 0.000ns
+The critical path consists of the following:
+
+ <State 47>: 2.852ns
+The critical path consists of the following:
+	'mul' operation 17 bit ('mul_ln62', ultra96ms2_418/utils.cpp:62->ultra96ms2_418/main_func.cpp:80) [122]  (2.852 ns)
+
+ <State 48>: 0.000ns
+The critical path consists of the following:
+
+ <State 49>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

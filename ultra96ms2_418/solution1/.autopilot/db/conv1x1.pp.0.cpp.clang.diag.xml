@@ -1,0 +1,23 @@
+<dict>
+  <key>main-file</key>
+  <string>F:/vivado_projects/EE4951_TaWork/ultra96ms2_418/solution1/.autopilot/db/conv1x1.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>ultra96ms2_418/conv1x1.cpp</string>
+      <key>line</key>
+      <integer>10</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>unknown pragma ignored</string>
+      <key>ID</key>
+      <integer>1017</integer>
+      <key>WarningOption</key>
+      <string>invalid-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

@@ -1,0 +1,227 @@
+readin finish
+readout finish
+B_OUT_result_verify[0]:0
+B_OUT_result_verify[1]:0.0998535
+B_OUT_result_verify[2]:0.199707
+B_OUT_result_verify[3]:0.299561
+B_OUT_result_verify[4]:0.399414
+B_OUT_result_verify[5]:0.499268
+B_OUT_result_verify[6]:0.599121
+B_OUT_result_verify[7]:0.698975
+B_OUT_result_verify[8]:0.798828
+B_OUT_result_verify[9]:0.898682
+B_OUT_result_verify[10]:0.998535
+B_OUT_result_verify[11]:1.09839
+B_OUT_result_verify[12]:1.19824
+B_OUT_result_verify[13]:1.2981
+B_OUT_result_verify[14]:1.39795
+B_OUT_result_verify[15]:1.4978
+B_OUT_result_verify[16]:1.59766
+B_OUT_result_verify[17]:1.69751
+B_OUT_result_verify[18]:1.79736
+B_OUT_result_verify[19]:1.89722
+B_OUT_result_verify[20]:1.99707
+B_OUT_result_verify[21]:2.09692
+B_OUT_result_verify[22]:2.19678
+B_OUT_result_verify[23]:2.29663
+B_OUT_result_verify[24]:2.39648
+B_OUT_result_verify[25]:2.49634
+B_OUT_result_verify[26]:2.59619
+B_OUT_result_verify[27]:2.69604
+B_OUT_result_verify[28]:2.7959
+B_OUT_result_verify[29]:2.89575
+B_OUT_result_verify[30]:2.99561
+B_OUT_result_verify[31]:3.09546
+B_OUT_result_verify[32]:3.19531
+B_OUT_result_verify[33]:3.29517
+B_OUT_result_verify[34]:3.39502
+B_OUT_result_verify[35]:3.49487
+B_OUT_result_verify[36]:3.59473
+B_OUT_result_verify[37]:3.69458
+B_OUT_result_verify[38]:3.79443
+B_OUT_result_verify[39]:3.89429
+B_OUT_result_verify[40]:3.99414
+B_OUT_result_verify[41]:4.09399
+B_OUT_result_verify[42]:4.19385
+B_OUT_result_verify[43]:4.2937
+B_OUT_result_verify[44]:4.39355
+B_OUT_result_verify[45]:4.49341
+B_OUT_result_verify[46]:4.59326
+B_OUT_result_verify[47]:4.69312
+B_OUT_result_verify[48]:4.79297
+B_OUT_result_verify[49]:4.89282
+
+F:\vivado_projects\EE4951_TaWork\wider_bus_fp\solution1\sim\verilog>set PATH= 
+
+F:\vivado_projects\EE4951_TaWork\wider_bus_fp\solution1\sim\verilog>call E:/Vivado/Vivado/2023.2/bin/xelab xil_defaultlib.apatb_main_func_top glbl -Oenable_linking_all_libraries  -prj main_func.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib "ieee_proposed=./ieee_proposed" -s main_func  
+Vivado Simulator v2023.2.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/Vivado/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_main_func_top glbl -Oenable_linking_all_libraries -prj main_func.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_16 -L floating_point_v7_0_21 --lib ieee_proposed=./ieee_proposed -s main_func 
+Multi-threading is on. Using 14 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/AESL_axi_master_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_main_func_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_func
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func_A_local_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_func_A_local_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func_B_local_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_func_B_local_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_func_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_func_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func_main_func_Pipeline_VITIS_LOOP_10_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_func_main_func_Pipeline_VITIS_LOOP_10_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func_main_func_Pipeline_VITIS_LOOP_22_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_func_main_func_Pipeline_VITIS_LOOP_22_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func_main_func_Pipeline_VITIS_LOOP_30_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_func_main_func_Pipeline_VITIS_LOOP_30_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func_mem_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi_load
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi_store
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi_read
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi_write
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi_burst_converter
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi_srl
+INFO: [VRFC 10-311] analyzing module main_func_mem_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func_sparsemux_11_3_16_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module main_func_sparsemux_11_3_16_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.main_func_A_local_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.main_func_B_local_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.main_func_flow_control_loop_pipe...
+Compiling module xil_defaultlib.main_func_main_func_Pipeline_VIT...
+Compiling module xil_defaultlib.main_func_sparsemux_11_3_16_1_1(...
+Compiling module xil_defaultlib.main_func_main_func_Pipeline_VIT...
+Compiling module xil_defaultlib.main_func_main_func_Pipeline_VIT...
+Compiling module xil_defaultlib.main_func_control_s_axi
+Compiling module xil_defaultlib.main_func_mem_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.main_func_mem_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.main_func_mem_m_axi_mem(MEM_STYL...
+Compiling module xil_defaultlib.main_func_mem_m_axi_fifo(MEM_STY...
+Compiling module xil_defaultlib.main_func_mem_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.main_func_mem_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.main_func_mem_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.main_func_mem_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.main_func_mem_m_axi_store(NUM_WR...
+Compiling module xil_defaultlib.main_func_mem_m_axi_mem(MEM_STYL...
+Compiling module xil_defaultlib.main_func_mem_m_axi_fifo(MEM_STY...
+Compiling module xil_defaultlib.main_func_mem_m_axi_load(NUM_REA...
+Compiling module xil_defaultlib.main_func_mem_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.main_func_mem_m_axi_burst_conver...
+Compiling module xil_defaultlib.main_func_mem_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.main_func_mem_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.main_func_mem_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.main_func_mem_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.main_func_mem_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.main_func_mem_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.main_func_mem_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.main_func_mem_m_axi_throttle(CON...
+Compiling module xil_defaultlib.main_func_mem_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.main_func_mem_m_axi_write(CONSER...
+Compiling module xil_defaultlib.main_func_mem_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.main_func_mem_m_axi_read(C_USER_...
+Compiling module xil_defaultlib.main_func_mem_m_axi(CONSERVATIVE...
+Compiling module xil_defaultlib.main_func
+Compiling module xil_defaultlib.AESL_axi_master_mem
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_main_func_top
+Compiling module work.glbl
+Built simulation snapshot main_func
+
+****** xsim v2023.2.1 (64-bit)
+  **** SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
+  **** IP Build 4080415 on Thu Dec 14 21:01:57 MST 2023
+  **** SharedData Build 4077621 on Mon Dec 11 00:23:44 MST 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/main_func/xsim_script.tcl
+# xsim {main_func} -autoloadwcfg -tclbatch {main_func.tcl}
+Time resolution is 1 ps
+source main_func.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "1325000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1385 ns : File "F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/sim/verilog/main_func.autotb.v" Line 488
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Apr 19 11:03:57 2024...
+B_OUT_result_verify[0]:0
+B_OUT_result_verify[1]:0.0998535
+B_OUT_result_verify[2]:0.199707
+B_OUT_result_verify[3]:0.299561
+B_OUT_result_verify[4]:0.399414
+B_OUT_result_verify[5]:0.499268
+B_OUT_result_verify[6]:0.599121
+B_OUT_result_verify[7]:0.698975
+B_OUT_result_verify[8]:0.798828
+B_OUT_result_verify[9]:0.898682
+B_OUT_result_verify[10]:0.998535
+B_OUT_result_verify[11]:1.09839
+B_OUT_result_verify[12]:1.19824
+B_OUT_result_verify[13]:1.2981
+B_OUT_result_verify[14]:1.39795
+B_OUT_result_verify[15]:1.4978
+B_OUT_result_verify[16]:1.59766
+B_OUT_result_verify[17]:1.69751
+B_OUT_result_verify[18]:1.79736
+B_OUT_result_verify[19]:1.89722
+B_OUT_result_verify[20]:1.99707
+B_OUT_result_verify[21]:2.09692
+B_OUT_result_verify[22]:2.19678
+B_OUT_result_verify[23]:2.29663
+B_OUT_result_verify[24]:2.39648
+B_OUT_result_verify[25]:2.49634
+B_OUT_result_verify[26]:2.59619
+B_OUT_result_verify[27]:2.69604
+B_OUT_result_verify[28]:2.7959
+B_OUT_result_verify[29]:2.89575
+B_OUT_result_verify[30]:2.99561
+B_OUT_result_verify[31]:3.09546
+B_OUT_result_verify[32]:3.19531
+B_OUT_result_verify[33]:3.29517
+B_OUT_result_verify[34]:3.39502
+B_OUT_result_verify[35]:3.49487
+B_OUT_result_verify[36]:3.59473
+B_OUT_result_verify[37]:3.69458
+B_OUT_result_verify[38]:3.79443
+B_OUT_result_verify[39]:3.89429
+B_OUT_result_verify[40]:3.99414
+B_OUT_result_verify[41]:4.09399
+B_OUT_result_verify[42]:4.19385
+B_OUT_result_verify[43]:4.2937
+B_OUT_result_verify[44]:4.39355
+B_OUT_result_verify[45]:4.49341
+B_OUT_result_verify[46]:4.59326
+B_OUT_result_verify[47]:4.69312
+B_OUT_result_verify[48]:4.79297
+B_OUT_result_verify[49]:4.89282

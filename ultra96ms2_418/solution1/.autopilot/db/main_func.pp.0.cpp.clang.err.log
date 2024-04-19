@@ -1,0 +1,28 @@
+F:/vivado_projects/EE4951_TaWork/ultra96ms2_418/solution1/csynth.tcl:28:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=name=main_func_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=main_func
+        ^
+F:/vivado_projects/EE4951_TaWork/ultra96ms2_418/solution1/directives.tcl:7:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=name=main_func_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=main_func
+        ^
+ultra96ms2_418/main_func.cpp:30:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=m_axi depth=1 port=input_feature_map bundle=fm_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi depth=1 port=input_feature_map bundle=fm
+        ^
+ultra96ms2_418/main_func.cpp:31:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=m_axi depth=1 port=weights_3x3 bundle=wt_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi depth=1 port=weights_3x3 bundle=wt
+        ^
+ultra96ms2_418/main_func.cpp:32:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=m_axi depth=1 port=bias_3x3 bundle=wt_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi depth=1 port=bias_3x3 bundle=wt
+        ^
+ultra96ms2_418/main_func.cpp:33:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=m_axi depth=1 port=weights_1x1 bundle=wt_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi depth=1 port=weights_1x1 bundle=wt
+        ^
+ultra96ms2_418/main_func.cpp:34:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=m_axi depth=1 port=bias_1x1 bundle=wt_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi depth=1 port=bias_1x1 bundle=wt
+        ^
+ultra96ms2_418/main_func.cpp:35:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=m_axi depth=1 port=output_feature_map bundle=fm_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE m_axi depth=1 port=output_feature_map bundle=fm
+        ^
+ultra96ms2_418/main_func.cpp:36:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=main_func_XLX_SEP_ PragmaOptions=s_axilite register port=return_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLS INTERFACE s_axilite register port=return
+        ^
+9 warnings generated.

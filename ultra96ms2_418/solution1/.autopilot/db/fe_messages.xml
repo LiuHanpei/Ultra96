@@ -1,0 +1,120 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_INVALID" msg_id="207-1017" msg_severity="WARNING" msg_loc="ultra96ms2_418/conv1x1.cpp:10:9" msg_body="unknown pragma ignored">
+        <args ClangWarningOption="invalid-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/vivado_projects/EE4951_TaWork/ultra96ms2_418/solution1/csynth.tcl:28:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=main_func" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/vivado_projects/EE4951_TaWork/ultra96ms2_418/solution1/directives.tcl:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=main_func" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ultra96ms2_418/main_func.cpp:30:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=1 port=input_feature_map bundle=fm" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ultra96ms2_418/main_func.cpp:31:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=1 port=weights_3x3 bundle=wt" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ultra96ms2_418/main_func.cpp:32:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=1 port=bias_3x3 bundle=wt" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ultra96ms2_418/main_func.cpp:33:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=1 port=weights_1x1 bundle=wt" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ultra96ms2_418/main_func.cpp:34:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=1 port=bias_1x1 bundle=wt" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ultra96ms2_418/main_func.cpp:35:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi depth=1 port=output_feature_map bundle=fm" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="ultra96ms2_418/main_func.cpp:36:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite register port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:29:0" msg_body="Inlining function 'load_weight_bias_from_DRAM(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'main_func(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="load_weight_bias_from_DRAM(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File ultra96ms2_418/utils.cpp Line 16 Column 0" Caller="main_func(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ultra96ms2_418/main_func.cpp Line 29 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:29:0" msg_body="Inlining function 'load_input_from_DRAM(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [42][82], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, int, int)' into 'main_func(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="load_input_from_DRAM(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [42][82], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, int, int)" Callee-DebugLoc="File ultra96ms2_418/utils.cpp Line 41 Column 0" Caller="main_func(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ultra96ms2_418/main_func.cpp Line 29 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:29:0" msg_body="Inlining function 'dw_conv3x3(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [40][80], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [42][82], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'main_func(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="dw_conv3x3(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [40][80], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [42][82], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File ultra96ms2_418/dw_conv3x3.cpp Line 10 Column 0" Caller="main_func(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ultra96ms2_418/main_func.cpp Line 29 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:29:0" msg_body="Inlining function 'conv1x1(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [40][80], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [40][80], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'main_func(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="conv1x1(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [40][80], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [40][80], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File ultra96ms2_418/conv1x1.cpp Line 9 Column 0" Caller="main_func(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ultra96ms2_418/main_func.cpp Line 29 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:29:0" msg_body="Inlining function 'store_output_tile_to_DRAM(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [40][80], int, int)' into 'main_func(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)'">
+        <args Callee="store_output_tile_to_DRAM(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [40][80], int, int)" Callee-DebugLoc="File ultra96ms2_418/utils.cpp Line 65 Column 0" Caller="main_func(ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3][3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt; (*) [3], ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_fixed&lt;16, 3, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Caller-DebugLoc="File ultra96ms2_418/main_func.cpp Line 29 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:29:0" msg_body="Aggregating maxi variable 'weights_1x1' with compact=none mode in 16-bits">
+        <args AggregateTypeName="compact=none" Bitwidth="16" HwTyName="maxi" Name="weights_1x1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:29:0" msg_body="Aggregating maxi variable 'weights_3x3' with compact=none mode in 16-bits">
+        <args AggregateTypeName="compact=none" Bitwidth="16" HwTyName="maxi" Name="weights_3x3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ultra96ms2_418/dw_conv3x3.cpp:34:21" msg_body="Loop 'VITIS_LOOP_34_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_34_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ultra96ms2_418/dw_conv3x3.cpp:35:22" msg_body="Loop 'VITIS_LOOP_35_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_35_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="ultra96ms2_418/conv1x1.cpp:16:22" msg_body="Loop 'VITIS_LOOP_16_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_16_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:29:0" msg_body="Unrolling loop 'VITIS_LOOP_34_4' (ultra96ms2_418/dw_conv3x3.cpp:34:21) in function 'main_func' completely with a factor of 3">
+        <args Factor="3" LoopLoc="ultra96ms2_418/dw_conv3x3.cpp:34:21" LoopName="VITIS_LOOP_34_4"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:29:0" msg_body="Unrolling loop 'VITIS_LOOP_35_5' (ultra96ms2_418/dw_conv3x3.cpp:35:22) in function 'main_func' completely with a factor of 3">
+        <args Factor="3" LoopLoc="ultra96ms2_418/dw_conv3x3.cpp:35:22" LoopName="VITIS_LOOP_35_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:29:0" msg_body="Unrolling loop 'VITIS_LOOP_16_4' (ultra96ms2_418/conv1x1.cpp:16:22) in function 'main_func' completely with a factor of 3">
+        <args Factor="3" LoopLoc="ultra96ms2_418/conv1x1.cpp:16:22" LoopName="VITIS_LOOP_16_4"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:8:0" msg_body="array_partition dim=3 type=cyclic factor=3 variable=inBuffer3x3 1 main_func ultra96ms2_418/main_func.cpp:8:0 inBuffer3x3">
+        <args PragmaFunction="main_func" PragmaIsAuto="1" PragmaOptions="dim=3 type=cyclic factor=3 variable=inBuffer3x3" PragmaType="array_partition" VarName="inBuffer3x3" varLoc="ultra96ms2_418/main_func.cpp:8:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:8:0" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=3' for array 'inBuffer3x3' due to pipeline pragma">
+        <args Dim="3" Factor="3" Mode="cyclic" Name="inBuffer3x3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:8:0" msg_body="array_partition dim=2 type=cyclic factor=3 variable=inBuffer3x3 1 main_func ultra96ms2_418/main_func.cpp:8:0 inBuffer3x3">
+        <args PragmaFunction="main_func" PragmaIsAuto="1" PragmaOptions="dim=2 type=cyclic factor=3 variable=inBuffer3x3" PragmaType="array_partition" VarName="inBuffer3x3" varLoc="ultra96ms2_418/main_func.cpp:8:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:8:0" msg_body="Inferring pragma 'array_partition type=cyclic factor=3 dim=2' for array 'inBuffer3x3' due to pipeline pragma">
+        <args Dim="2" Factor="3" Mode="cyclic" Name="inBuffer3x3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:9:0" msg_body="array_partition dim=1 type=complete  variable=outBuffer3x3 1 main_func ultra96ms2_418/main_func.cpp:9:0 outBuffer3x3">
+        <args PragmaFunction="main_func" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=outBuffer3x3" PragmaType="array_partition" VarName="outBuffer3x3" varLoc="ultra96ms2_418/main_func.cpp:9:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:9:0" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'outBuffer3x3' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="outBuffer3x3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:16:0" msg_body="array_partition dim=2 type=complete  variable=weight_buf1x1 1 main_func ultra96ms2_418/main_func.cpp:16:0 weight_buf1x1">
+        <args PragmaFunction="main_func" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=weight_buf1x1" PragmaType="array_partition" VarName="weight_buf1x1" varLoc="ultra96ms2_418/main_func.cpp:16:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:16:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'weight_buf1x1' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="weight_buf1x1" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:14:0" msg_body="array_partition dim=3 type=complete  variable=weight_buf3x3 1 main_func ultra96ms2_418/main_func.cpp:14:0 weight_buf3x3">
+        <args PragmaFunction="main_func" PragmaIsAuto="1" PragmaOptions="dim=3 type=complete  variable=weight_buf3x3" PragmaType="array_partition" VarName="weight_buf3x3" varLoc="ultra96ms2_418/main_func.cpp:14:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:14:0" msg_body="Inferring pragma 'array_partition type=complete dim=3' for array 'weight_buf3x3' due to pipeline pragma">
+        <args Dim="3" Mode="complete" Name="weight_buf3x3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:14:0" msg_body="array_partition dim=2 type=complete  variable=weight_buf3x3 1 main_func ultra96ms2_418/main_func.cpp:14:0 weight_buf3x3">
+        <args PragmaFunction="main_func" PragmaIsAuto="1" PragmaOptions="dim=2 type=complete  variable=weight_buf3x3" PragmaType="array_partition" VarName="weight_buf3x3" varLoc="ultra96ms2_418/main_func.cpp:14:0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:14:0" msg_body="Inferring pragma 'array_partition type=complete dim=2' for array 'weight_buf3x3' due to pipeline pragma">
+        <args Dim="2" Mode="complete" Name="weight_buf3x3" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:14:0" msg_body="Applying array_partition to 'weight_buf3x3': Complete partitioning on dimension 2. Complete partitioning on dimension 3.">
+        <args Dim="islist 2 3" Mode="islist Complete Complete" UOName="weight_buf3x3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:16:0" msg_body="Applying array_partition to 'weight_buf1x1': Complete partitioning on dimension 2.">
+        <args Dim="2" Mode="Complete" UOName="weight_buf1x1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:9:0" msg_body="Applying array_partition to 'outBuffer3x3': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="outBuffer3x3"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="ultra96ms2_418/main_func.cpp:8:0" msg_body="Applying array_partition to 'inBuffer3x3': Cyclic partitioning with factor 3 on dimension 2. Cyclic partitioning with factor 3 on dimension 3.">
+        <args Dim="islist 2 3" Factor="islist 3 3" Mode="islist Cyclic Cyclic" UOName="inBuffer3x3"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

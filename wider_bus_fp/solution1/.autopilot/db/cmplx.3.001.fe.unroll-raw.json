@@ -1,0 +1,19 @@
+{
+  "0": {
+    "basicblocks": 17,
+    "calls": "",
+    "file": "main_func.cpp",
+    "fileloc": 4,
+    "instructions": 71,
+    "loads": {
+      "L": 2,
+      "T": 1
+    },
+    "name": "main_func",
+    "stores": {
+      "L": 2,
+      "T": 1
+    },
+    "total_instructions": 71
+  }
+}

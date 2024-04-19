@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="conv.h" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\conv.h"/>
+    <originFiles name="conv1x1.cpp" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\conv1x1.cpp"/>
+    <originFiles name="dw_conv3x3.cpp" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\dw_conv3x3.cpp"/>
+    <originFiles name="main_func.cpp" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\main_func.cpp"/>
+    <originFiles name="utils.cpp" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\utils.cpp"/>
+    <originFiles name="utils.h" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\utils.h"/>
+  </source>
+  <testbench>
+    <originFiles name="dw_conv_bias1x1.bin" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\dw_conv_bias1x1.bin"/>
+    <originFiles name="dw_conv_bias3x3.bin" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\dw_conv_bias3x3.bin"/>
+    <originFiles name="dw_conv_input3x3.bin" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\dw_conv_input3x3.bin"/>
+    <originFiles name="dw_conv_output1x1.bin" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\dw_conv_output1x1.bin"/>
+    <originFiles name="dw_conv_output3x3.bin" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\dw_conv_output3x3.bin"/>
+    <originFiles name="dw_conv_weight1x1.bin" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\dw_conv_weight1x1.bin"/>
+    <originFiles name="dw_conv_weight3x3.bin" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\dw_conv_weight3x3.bin"/>
+    <originFiles name="sim.cpp" path="F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\sim.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

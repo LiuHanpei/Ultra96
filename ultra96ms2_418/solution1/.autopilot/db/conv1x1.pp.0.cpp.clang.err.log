@@ -1,0 +1,4 @@
+ultra96ms2_418/conv1x1.cpp:10:9: warning: unknown pragma ignored [-Winvalid-hls-pragmas]
+#pragma inline off
+        ^
+1 warning generated.

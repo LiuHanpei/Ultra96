@@ -1,0 +1,86 @@
+{
+  "0": {
+    "basicblocks": 7,
+    "calls": "3 4 1 2 5",
+    "file": "main_func.cpp",
+    "fileloc": 21,
+    "instructions": 25,
+    "name": "main_func",
+    "total_instructions": 396
+  },
+  "1": {
+    "basicblocks": 31,
+    "calls": "",
+    "file": "dw_conv3x3.cpp",
+    "fileloc": 3,
+    "instructions": 94,
+    "loads": {
+      "G": 4
+    },
+    "name": "dw_conv3x3",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 94
+  },
+  "2": {
+    "basicblocks": 45,
+    "calls": "",
+    "file": "conv1x1.cpp",
+    "fileloc": 3,
+    "instructions": 116,
+    "loads": {
+      "G": 5
+    },
+    "name": "conv1x1",
+    "stores": {
+      "G": 1
+    },
+    "total_instructions": 116
+  },
+  "3": {
+    "basicblocks": 23,
+    "calls": "",
+    "file": "utils.cpp",
+    "fileloc": 6,
+    "instructions": 74,
+    "loads": {
+      "L": 4
+    },
+    "name": "load_weight_bias_from_DRAM",
+    "stores": {
+      "G": 4
+    },
+    "total_instructions": 74
+  },
+  "4": {
+    "basicblocks": 17,
+    "calls": "",
+    "file": "utils.cpp",
+    "fileloc": 35,
+    "instructions": 53,
+    "loads": {
+      "L": 1
+    },
+    "name": "load_input_from_DRAM",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 53
+  },
+  "5": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "utils.cpp",
+    "fileloc": 59,
+    "instructions": 34,
+    "loads": {
+      "G": 1
+    },
+    "name": "store_output_tile_to_DRAM",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 34
+  }
+}

@@ -1,0 +1,170 @@
+
+
+================================================================
+== Synthesis Summary Report of 'main_func'
+================================================================
++ General Information: 
+    * Date:           Fri Apr 19 11:03:28 2024
+    * Version:        2023.2.1 (Build 4070103 on Dec 13 2023)
+    * Project:        wider_bus_fp
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu9cg-ffvb1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+------------+------------+-----+
+    |                Modules                | Issue|      | Latency | Latency | Iteration|         | Trip |          |         |    |            |            |     |
+    |                & Loops                | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF     |     LUT    | URAM|
+    +---------------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+------------+------------+-----+
+    |+ main_func                            |     -|  0.00|       87|  870.000|         -|       88|     -|        no|  30 (1%)|   -|  2223 (~0%)|  2570 (~0%)|    -|
+    | + main_func_Pipeline_VITIS_LOOP_10_1  |     -|  0.00|        8|   80.000|         -|        8|     -|        no|        -|   -|   174 (~0%)|    73 (~0%)|    -|
+    |  o VITIS_LOOP_10_1                    |     -|  7.30|        6|   60.000|         3|        1|     5|       yes|        -|   -|           -|           -|    -|
+    | + main_func_Pipeline_VITIS_LOOP_22_3  |     -|  4.50|       52|  520.000|         -|       52|     -|        no|        -|   -|    51 (~0%)|   178 (~0%)|    -|
+    |  o VITIS_LOOP_22_3                    |     -|  7.30|       50|  500.000|         2|        1|    50|       yes|        -|   -|           -|           -|    -|
+    | + main_func_Pipeline_VITIS_LOOP_30_4  |     -|  0.00|        8|   80.000|         -|        8|     -|        no|        -|   -|   168 (~0%)|    73 (~0%)|    -|
+    |  o VITIS_LOOP_30_4                    |     -|  7.30|        6|   60.000|         3|        1|     5|       yes|        -|   -|           -|           -|    -|
+    +---------------------------------------+------+------+---------+---------+----------+---------+------+----------+---------+----+------------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* M_AXI
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| Interface | Data Width | Address Width | Latency | Offset | Register | Max Widen | Max Read     | Max Write    | Num Read    | Num Write   | Resource Estimate |
+|           | (SW->HW)   |               |         |        |          | Bitwidth  | Burst Length | Burst Length | Outstanding | Outstanding |                   |
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+| m_axi_mem | 160 -> 256 | 64            | 0       | slave  | 0        | 0         | 16           | 16           | 16          | 16          | BRAM=30           |
++-----------+------------+---------------+---------+--------+----------+-----------+--------------+--------------+-------------+-------------+-------------------+
+
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 6             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+----------+--------+-------+--------+----------------------+
+| Interface     | Register | Offset | Width | Access | Description          |
++---------------+----------+--------+-------+--------+----------------------+
+| s_axi_control | A_IN_1   | 0x10   | 32    | W      | Data signal of A_IN  |
+| s_axi_control | A_IN_2   | 0x14   | 32    | W      | Data signal of A_IN  |
+| s_axi_control | A_OUT_1  | 0x1c   | 32    | W      | Data signal of A_OUT |
+| s_axi_control | A_OUT_2  | 0x20   | 32    | W      | Data signal of A_OUT |
++---------------+----------+--------+-------+--------+----------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst_n  | reset      | ap_rst_n                          |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------+
+| Argument | Direction | Datatype      |
++----------+-----------+---------------+
+| A_IN     | inout     | ap_uint<160>* |
+| A_OUT    | inout     | ap_uint<160>* |
++----------+-----------+---------------+
+
+* SW-to-HW Mapping
++----------+---------------+-----------+----------+-----------------------------------+
+| Argument | HW Interface  | HW Type   | HW Usage | HW Info                           |
++----------+---------------+-----------+----------+-----------------------------------+
+| A_IN     | m_axi_mem     | interface |          |                                   |
+| A_IN     | s_axi_control | register  | offset   | name=A_IN_1 offset=0x10 range=32  |
+| A_IN     | s_axi_control | register  | offset   | name=A_IN_2 offset=0x14 range=32  |
+| A_OUT    | m_axi_mem     | interface |          |                                   |
+| A_OUT    | s_axi_control | register  | offset   | name=A_OUT_1 offset=0x1c range=32 |
+| A_OUT    | s_axi_control | register  | offset   | name=A_OUT_2 offset=0x20 range=32 |
++----------+---------------+-----------+----------+-----------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+* Inferred Burst Summary
++--------------+-----------+--------+-------+-----------------+----------------------------------+
+| HW Interface | Direction | Length | Width | Loop            | Loop Location                    |
++--------------+-----------+--------+-------+-----------------+----------------------------------+
+| m_axi_mem    | read      | 5      | 256   | VITIS_LOOP_10_1 | wider_bus_fp/main_func.cpp:10:19 |
+| m_axi_mem    | write     | 5      | 256   | VITIS_LOOP_30_4 | wider_bus_fp/main_func.cpp:30:19 |
++--------------+-----------+--------+-------+-----------------+----------------------------------+
+
+* All M_AXI Variable Accesses
++--------------+----------+----------------------------------+-----------+--------------+--------+-----------------+----------------------------------+------------------------------------------------------------+
+| HW Interface | Variable | Access Location                  | Direction | Burst Status | Length | Loop            | Loop Location                    | Problem                                                    |
++--------------+----------+----------------------------------+-----------+--------------+--------+-----------------+----------------------------------+------------------------------------------------------------+
+| m_axi_mem    | A_IN     | wider_bus_fp/main_func.cpp:12:20 | read      | Widen Fail   |        |                 |                                  | i160 allocated space contains padding. This is unsupported |
+| m_axi_mem    | A_IN     | wider_bus_fp/main_func.cpp:12:20 | read      | Inferred     | 5      | VITIS_LOOP_10_1 | wider_bus_fp/main_func.cpp:10:19 |                                                            |
+| m_axi_mem    | A_OUT    | wider_bus_fp/main_func.cpp:37:12 | write     | Widen Fail   |        |                 |                                  | i160 allocated space contains padding. This is unsupported |
+| m_axi_mem    | A_OUT    | wider_bus_fp/main_func.cpp:37:12 | write     | Inferred     | 5      | VITIS_LOOP_30_4 | wider_bus_fp/main_func.cpp:30:19 |                                                            |
++--------------+----------+----------------------------------+-----------+--------------+--------+-----------------+----------------------------------+------------------------------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++---------------------------------------+-----+--------+------------+-----+--------+---------+
+| Name                                  | DSP | Pragma | Variable   | Op  | Impl   | Latency |
++---------------------------------------+-----+--------+------------+-----+--------+---------+
+| + main_func                           | 0   |        |            |     |        |         |
+|  + main_func_Pipeline_VITIS_LOOP_10_1 | 0   |        |            |     |        |         |
+|    add_ln10_fu_258_p2                 |     |        | add_ln10   | add | fabric | 0       |
+|  + main_func_Pipeline_VITIS_LOOP_22_3 | 0   |        |            |     |        |         |
+|    add_ln22_fu_236_p2                 |     |        | add_ln22   | add | fabric | 0       |
+|    add_ln22_1_fu_245_p2               |     |        | add_ln22_1 | add | fabric | 0       |
+|    add_ln22_2_fu_279_p2               |     |        | add_ln22_2 | add | fabric | 0       |
+|  + main_func_Pipeline_VITIS_LOOP_30_4 | 0   |        |            |     |        |         |
+|    add_ln30_fu_265_p2                 |     |        | add_ln30   | add | fabric | 0       |
++---------------------------------------+-----+--------+------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-------------------+---------------+-----------+------+------+--------+-----------+------+---------+------------------+
+| Name              | Usage         | Type      | BRAM | URAM | Pragma | Variable  | Impl | Latency | Bitwidth, Depth, |
+|                   |               |           |      |      |        |           |      |         | Banks            |
++-------------------+---------------+-----------+------+------+--------+-----------+------+---------+------------------+
+| + main_func       |               |           | 30   | 0    |        |           |      |         |                  |
+|   control_s_axi_U | interface     | s_axilite |      |      |        |           |      |         |                  |
+|   mem_m_axi_U     | interface     | m_axi     | 30   |      |        |           |      |         |                  |
+|   A_local_U       | ram_t2p array |           |      |      |        | A_local   | auto | 1       | 16, 10, 1        |
+|   A_local_1_U     | ram_t2p array |           |      |      |        | A_local_1 | auto | 1       | 16, 10, 1        |
+|   A_local_2_U     | ram_t2p array |           |      |      |        | A_local_2 | auto | 1       | 16, 10, 1        |
+|   A_local_3_U     | ram_t2p array |           |      |      |        | A_local_3 | auto | 1       | 16, 10, 1        |
+|   A_local_4_U     | ram_t2p array |           |      |      |        | A_local_4 | auto | 1       | 16, 10, 1        |
+|   B_local_U       | ram_s2p array |           |      |      |        | B_local   | auto | 1       | 16, 10, 1        |
+|   B_local_1_U     | ram_s2p array |           |      |      |        | B_local_1 | auto | 1       | 16, 10, 1        |
+|   B_local_2_U     | ram_s2p array |           |      |      |        | B_local_2 | auto | 1       | 16, 10, 1        |
+|   B_local_3_U     | ram_s2p array |           |      |      |        | B_local_3 | auto | 1       | 16, 10, 1        |
+|   B_local_4_U     | ram_s2p array |           |      |      |        | B_local_4 | auto | 1       | 16, 10, 1        |
++-------------------+---------------+-----------+------+------+--------+-----------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+------------------------------------------+--------------------------------------------------+
+| Type      | Options                                  | Location                                         |
++-----------+------------------------------------------+--------------------------------------------------+
+| interface | m_axi port=A_IN offset=slave bundle=mem  | wider_bus_fp/main_func.cpp:6 in main_func, A_IN  |
+| interface | m_axi port=A_OUT offset=slave bundle=mem | wider_bus_fp/main_func.cpp:7 in main_func, A_OUT |
++-----------+------------------------------------------+--------------------------------------------------+
+
+

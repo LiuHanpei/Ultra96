@@ -1,0 +1,67 @@
+---
+MainSourceFile:  'F:/vivado_projects/EE4951_TaWork/ultra96ms2_418/solution1/.autopilot/db/main_func.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        'E:\Vivado\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\solution1\.autopilot\db\main_func.pp.0.cpp'
+        Offset:          799255
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'E:\Vivado\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\solution1\.autopilot\db\main_func.pp.0.cpp'
+        Offset:          1026579
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'E:\Vivado\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\solution1\.autopilot\db\main_func.pp.0.cpp'
+        Offset:          1027043
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'E:\Vivado\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\solution1\.autopilot\db\main_func.pp.0.cpp'
+        Offset:          1027508
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'E:\Vivado\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\solution1\.autopilot\db\main_func.pp.0.cpp'
+        Offset:          1310394
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_56_1:  '
+    FileOffset:      56
+    FilePath:        'F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\main_func.cpp'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\solution1\.autopilot\db\main_func.pp.0.cpp'
+        Offset:          1680474
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_56_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_57_2:  '
+    FileOffset:      57
+    FilePath:        'F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\main_func.cpp'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\EE4951_TaWork\ultra96ms2_418\solution1\.autopilot\db\main_func.pp.0.cpp'
+        Offset:          1680503
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_57_2: '
+...

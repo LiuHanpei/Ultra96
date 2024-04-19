@@ -1,0 +1,58 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../sim.cpp in debug mode
+   Generating csim.exe
+readin finish
+readout finish
+B_OUT_result[0]:0
+B_OUT_result[1]:0.0998535
+B_OUT_result[2]:0.199707
+B_OUT_result[3]:0.299561
+B_OUT_result[4]:0.399414
+B_OUT_result[5]:0.499268
+B_OUT_result[6]:0.599121
+B_OUT_result[7]:0.698975
+B_OUT_result[8]:0.798828
+B_OUT_result[9]:0.898682
+B_OUT_result[10]:0.998535
+B_OUT_result[11]:1.09839
+B_OUT_result[12]:1.19824
+B_OUT_result[13]:1.2981
+B_OUT_result[14]:1.39795
+B_OUT_result[15]:1.4978
+B_OUT_result[16]:1.59766
+B_OUT_result[17]:1.69751
+B_OUT_result[18]:1.79736
+B_OUT_result[19]:1.89722
+B_OUT_result[20]:1.99707
+B_OUT_result[21]:2.09692
+B_OUT_result[22]:2.19678
+B_OUT_result[23]:2.29663
+B_OUT_result[24]:2.39648
+B_OUT_result[25]:2.49634
+B_OUT_result[26]:2.59619
+B_OUT_result[27]:2.69604
+B_OUT_result[28]:2.7959
+B_OUT_result[29]:2.89575
+B_OUT_result[30]:2.99561
+B_OUT_result[31]:3.09546
+B_OUT_result[32]:3.19531
+B_OUT_result[33]:3.29517
+B_OUT_result[34]:3.39502
+B_OUT_result[35]:3.49487
+B_OUT_result[36]:3.59473
+B_OUT_result[37]:3.69458
+B_OUT_result[38]:3.79443
+B_OUT_result[39]:3.89429
+B_OUT_result[40]:3.99414
+B_OUT_result[41]:4.09399
+B_OUT_result[42]:4.19385
+B_OUT_result[43]:4.2937
+B_OUT_result[44]:4.39355
+B_OUT_result[45]:4.49341
+B_OUT_result[46]:4.59326
+B_OUT_result[47]:4.69312
+B_OUT_result[48]:4.79297
+B_OUT_result[49]:4.89282
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

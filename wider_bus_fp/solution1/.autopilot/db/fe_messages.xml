@@ -1,0 +1,42 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/vivado_projects/EE4951_TaWork/wider_bus_fp/solution1/csynth.tcl:18:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=main_func" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="wider_bus_fp/main_func.cpp:6:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A_IN offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="wider_bus_fp/main_func.cpp:7:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="main_func" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=A_OUT offset=slave bundle=mem" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="wider_bus_fp/main_func.cpp:33:20" msg_body="Loop 'VITIS_LOOP_33_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_33_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="wider_bus_fp/main_func.cpp:13:20" msg_body="Loop 'VITIS_LOOP_13_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_13_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="wider_bus_fp/main_func.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_33_5' (wider_bus_fp/main_func.cpp:33:20) in function 'main_func' completely with a factor of 10">
+        <args Factor="10" LoopLoc="wider_bus_fp/main_func.cpp:33:20" LoopName="VITIS_LOOP_33_5"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="wider_bus_fp/main_func.cpp:5:0" msg_body="Unrolling loop 'VITIS_LOOP_13_2' (wider_bus_fp/main_func.cpp:13:20) in function 'main_func' completely with a factor of 10">
+        <args Factor="10" LoopLoc="wider_bus_fp/main_func.cpp:13:20" LoopName="VITIS_LOOP_13_2"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="wider_bus_fp/main_func.cpp:9:7" msg_body="array_partition dim=1 type=cyclic factor=5 variable=A_local 1 main_func wider_bus_fp/main_func.cpp:9:7 A_local">
+        <args PragmaFunction="main_func" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=5 variable=A_local" PragmaType="array_partition" VarName="A_local" varLoc="wider_bus_fp/main_func.cpp:9:7"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="wider_bus_fp/main_func.cpp:9:7" msg_body="Inferring pragma 'array_partition type=cyclic factor=5 dim=1' for array 'A_local' due to pipeline pragma">
+        <args Dim="1" Factor="5" Mode="cyclic" Name="A_local" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="wider_bus_fp/main_func.cpp:9:20" msg_body="array_partition dim=1 type=cyclic factor=5 variable=B_local 1 main_func wider_bus_fp/main_func.cpp:9:20 B_local">
+        <args PragmaFunction="main_func" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=5 variable=B_local" PragmaType="array_partition" VarName="B_local" varLoc="wider_bus_fp/main_func.cpp:9:20"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="wider_bus_fp/main_func.cpp:9:20" msg_body="Inferring pragma 'array_partition type=cyclic factor=5 dim=1' for array 'B_local' due to pipeline pragma">
+        <args Dim="1" Factor="5" Mode="cyclic" Name="B_local" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="wider_bus_fp/main_func.cpp:9:7" msg_body="Applying array_partition to 'A_local': Cyclic partitioning with factor 5 on dimension 1.">
+        <args Dim="1" Factor="5" Mode="Cyclic" UOName="A_local"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="wider_bus_fp/main_func.cpp:9:20" msg_body="Applying array_partition to 'B_local': Cyclic partitioning with factor 5 on dimension 1.">
+        <args Dim="1" Factor="5" Mode="Cyclic" UOName="B_local"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

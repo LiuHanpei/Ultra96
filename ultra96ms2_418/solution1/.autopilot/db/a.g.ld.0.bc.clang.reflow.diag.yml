@@ -1,0 +1,1198 @@
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'load_weight_bias_from_DRAM(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 16, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'load_input_from_DRAM(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [42][82], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, int, int)'
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 41, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'dw_conv3x3(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [40][80], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [42][82], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/dw_conv3x3.cpp, Line: 10, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'conv1x1(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [40][80], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [40][80], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/conv1x1.cpp, Line: 9, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'store_output_tile_to_DRAM(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [40][80], int, int)'
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 65, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            weights_1x1
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            weights_3x3
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '16'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 17, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '27'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weights_3x31seq
+  - ArrayName:       weights_3x3
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_17_1
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:17:22'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 20, Column: 30 }
+  - OrigDirection:   read
+  - OrigID:          for.inc.i.load.6
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 22, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bias_3x32seq
+  - ArrayName:       bias_3x3
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_22_4
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:22:22'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 23, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          for.inc34.i.load.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 25, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '144'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        weights_1x13seq
+  - ArrayName:       weights_1x1
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_5
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:25:22'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 27, Column: 24 }
+  - OrigDirection:   read
+  - OrigID:          for.inc54.i.load.6
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 29, Column: 19 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of length '
+  - Length:          '48'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        bias_1x14seq
+  - ArrayName:       bias_1x1
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_29_7
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:29:19'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 30, Column: 18 }
+  - OrigDirection:   read
+  - OrigID:          for.inc69.i.load.5
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 68, Column: 30 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of length '
+  - Length:          '80'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       output_feature_map
+  - String:          ' '
+  - BundleName:      fm
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_68_3
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:68:30'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 70, Column: 43 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.i40.store.8
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            AccessInCondBranch
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 53, Column: 25 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Access '
+  - Access:          load
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 53, Column: 25 }
+  - String:          ' is in the conditional branch'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 53, Column: 25 }
+  - OrigDirection:   read
+  - OrigID:          if.else.i.load.1
+  - ArrayName:       input_feature_map
+  - String:          ' '
+  - BundleName:      fm
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_45_3
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:45:21'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            IncompatibleStride
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 68, Column: 30 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          Stride is incompatible
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 68, Column: 30 }
+  - OrigDirection:   write
+  - OrigID:          scevgepseq
+  - ArrayName:       output_feature_map
+  - String:          ' '
+  - BundleName:      fm
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_67_2
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:67:26'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 68, Column: 30 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 68, Column: 30 }
+  - OrigDirection:   write
+  - OrigID:          scevgepseq
+  - ArrayName:       output_feature_map
+  - String:          ' '
+  - BundleName:      fm
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_68_3
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:68:30'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 29, Column: 19 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 29, Column: 19 }
+  - OrigDirection:   read
+  - OrigID:          bias_1x14seq
+  - ArrayName:       bias_1x1
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_29_7
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:29:19'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 25, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 25, Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          weights_1x13seq
+  - ArrayName:       weights_1x1
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_26_6
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:26:26'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 22, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 22, Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          bias_3x32seq
+  - ArrayName:       bias_3x3
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_22_4
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:22:22'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 17, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i16
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 17, Column: 22 }
+  - OrigDirection:   read
+  - OrigID:          weights_3x31seq
+  - ArrayName:       weights_3x3
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_19_3
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:19:21'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_19_3
+  - String:          '> at '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:19:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_22_4
+  - String:          '> at '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:22:22'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_26_6
+  - String:          '> at '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:26:26'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_29_7
+  - String:          '> at '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:29:19'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_68_3
+  - String:          '> at '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:68:30'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_14_3
+  - String:          '> at '
+  - LoopLoc:         'ultra96ms2_418/conv1x1.cpp:14:21'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_32_3
+  - String:          '> at '
+  - LoopLoc:         'ultra96ms2_418/dw_conv3x3.cpp:32:20'
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        VITIS_LOOP_45_3
+  - String:          '> at '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:45:21'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ultra96ms2_418/dw_conv3x3.cpp, Line: 34, Column: 21 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_34_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ultra96ms2_418/dw_conv3x3.cpp, Line: 35, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_35_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ultra96ms2_418/conv1x1.cpp, Line: 16, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_16_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_34_4
+  - String:          ''' ('
+  - LoopLoc:         'ultra96ms2_418/dw_conv3x3.cpp:34:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          main_func
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_35_5
+  - String:          ''' ('
+  - LoopLoc:         'ultra96ms2_418/dw_conv3x3.cpp:35:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          main_func
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_35_5
+  - String:          ''' ('
+  - LoopLoc:         'ultra96ms2_418/dw_conv3x3.cpp:35:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          main_func
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_35_5
+  - String:          ''' ('
+  - LoopLoc:         'ultra96ms2_418/dw_conv3x3.cpp:35:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          main_func
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_16_4
+  - String:          ''' ('
+  - LoopLoc:         'ultra96ms2_418/conv1x1.cpp:16:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          main_func
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 8, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=3 type=cyclic factor=3 variable=inBuffer3x3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  main_func
+  - String:          ' '
+  - varLoc:          'ultra96ms2_418/main_func.cpp:8:0'
+  - String:          ' '
+  - VarName:         inBuffer3x3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 8, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '3'
+  - String:          ' dim='
+  - Dim:             '3'
+  - String:          ''' for array '''
+  - Name:            inBuffer3x3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 8, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=cyclic factor=3 variable=inBuffer3x3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  main_func
+  - String:          ' '
+  - varLoc:          'ultra96ms2_418/main_func.cpp:8:0'
+  - String:          ' '
+  - VarName:         inBuffer3x3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 8, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            cyclic
+  - String:          ' factor='
+  - Factor:          '3'
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            inBuffer3x3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 9, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=outBuffer3x3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  main_func
+  - String:          ' '
+  - varLoc:          'ultra96ms2_418/main_func.cpp:9:0'
+  - String:          ' '
+  - VarName:         outBuffer3x3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 9, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            outBuffer3x3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 16, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=weight_buf1x1'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  main_func
+  - String:          ' '
+  - varLoc:          'ultra96ms2_418/main_func.cpp:16:0'
+  - String:          ' '
+  - VarName:         weight_buf1x1
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 16, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            weight_buf1x1
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 14, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=3 type=complete  variable=weight_buf3x3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  main_func
+  - String:          ' '
+  - varLoc:          'ultra96ms2_418/main_func.cpp:14:0'
+  - String:          ' '
+  - VarName:         weight_buf3x3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 14, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '3'
+  - String:          ''' for array '''
+  - Name:            weight_buf3x3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 14, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=weight_buf3x3'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  main_func
+  - String:          ' '
+  - varLoc:          'ultra96ms2_418/main_func.cpp:14:0'
+  - String:          ' '
+  - VarName:         weight_buf3x3
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 14, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            weight_buf3x3
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 14, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          weight_buf3x3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 16, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          weight_buf1x1
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 9, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          outBuffer3x3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 8, Column: 0 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          inBuffer3x3
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '3'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+  - String:          ' '
+  - Mode:            Cyclic
+  - String:          ' partitioning'
+  - String:          ' with factor '
+  - Factor:          '3'
+  - String:          ' on dimension '
+  - Dim:             '3'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 17, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '27'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_17_1
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:17:22'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 17, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '27'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_17_1
+  - String:          '''('
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:17:22'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      wt
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 22, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq1
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_22_4
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:22:22'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 22, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '3'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_22_4
+  - String:          '''('
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:22:22'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      wt
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 25, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '144'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq2
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_25_5
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:25:22'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 25, Column: 22 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '144'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_25_5
+  - String:          '''('
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:25:22'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      wt
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 29, Column: 19 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '48'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq3
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      wt
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_29_7
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:29:19'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 29, Column: 19 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of length '
+  - Length:          '48'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_29_7
+  - String:          '''('
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:29:19'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      wt
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 68, Column: 30 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '80'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq4
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      fm
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_68_3
+  - String:          ' '
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:68:30'
+  - String:          ' '
+  - Function:        'main_func(ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3][3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [3], ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<16, 3, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: ultra96ms2_418/main_func.cpp, Line: 29, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: ultra96ms2_418/utils.cpp, Line: 68, Column: 30 }
+Function:        _Z9main_funcP8ap_fixedILi16ELi3EL9ap_q_mode5EL9ap_o_mode3ELi0EEPA3_A3_S2_S3_PS4_S3_S3_
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of length '
+  - Length:          '80'
+  - String:          ' and bit width '
+  - Width:           '16'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_68_3
+  - String:          '''('
+  - LoopLoc:         'ultra96ms2_418/utils.cpp:68:30'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      fm
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
